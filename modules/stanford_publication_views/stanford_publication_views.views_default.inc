@@ -707,7 +707,7 @@ function stanford_publication_views_views_default_views() {
   );
   $handler->display->display_options['filters']['field_s_pub_type_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_s_pub_type_tid']['vocabulary'] = 'publication_type';
-  $handler->display->display_options['path'] = 'doc-library';
+  $handler->display->display_options['path'] = 'documents';
   $export['publications'] = $view;
 
   return $export;
