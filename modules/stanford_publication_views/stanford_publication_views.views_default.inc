@@ -611,7 +611,6 @@ function stanford_publication_views_views_default_views() {
   $handler->display->display_options['fields']['field_stanford_subsite_sub_tags']['field'] = 'field_stanford_subsite_sub_tags';
   $handler->display->display_options['fields']['field_stanford_subsite_sub_tags']['label'] = 'Responsible Organization';
   $handler->display->display_options['fields']['field_stanford_subsite_sub_tags']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_stanford_subsite_sub_tags']['type'] = 'taxonomy_term_reference_plain';
   $handler->display->display_options['fields']['field_stanford_subsite_sub_tags']['settings'] = array(
     'custom_link_to_entity' => 0,
     'custom_prefix' => '',
