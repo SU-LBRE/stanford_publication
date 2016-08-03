@@ -55,7 +55,7 @@ function stanford_publication_views_views_default_views() {
   $handler->display->display_options['fields']['nid']['label'] = '';
   $handler->display->display_options['fields']['nid']['exclude'] = TRUE;
   $handler->display->display_options['fields']['nid']['element_label_colon'] = FALSE;
-  /* Field: Field: Image */
+  /* Field: Field: Featured Image */
   $handler->display->display_options['fields']['field_s_image_info']['id'] = 'field_s_image_info';
   $handler->display->display_options['fields']['field_s_image_info']['table'] = 'field_data_field_s_image_info';
   $handler->display->display_options['fields']['field_s_image_info']['field'] = 'field_s_image_info';
@@ -172,7 +172,7 @@ function stanford_publication_views_views_default_views() {
   $handler->display->display_options['fields']['nid']['label'] = '';
   $handler->display->display_options['fields']['nid']['exclude'] = TRUE;
   $handler->display->display_options['fields']['nid']['element_label_colon'] = FALSE;
-  /* Field: Field: Image */
+  /* Field: Field: Featured Image */
   $handler->display->display_options['fields']['field_s_image_info']['id'] = 'field_s_image_info';
   $handler->display->display_options['fields']['field_s_image_info']['table'] = 'field_data_field_s_image_info';
   $handler->display->display_options['fields']['field_s_image_info']['field'] = 'field_s_image_info';
@@ -327,7 +327,7 @@ function stanford_publication_views_views_default_views() {
   $handler->display->display_options['fields']['nid']['label'] = '';
   $handler->display->display_options['fields']['nid']['exclude'] = TRUE;
   $handler->display->display_options['fields']['nid']['element_label_colon'] = FALSE;
-  /* Field: Field: Image */
+  /* Field: Field: Featured Image */
   $handler->display->display_options['fields']['field_s_image_info']['id'] = 'field_s_image_info';
   $handler->display->display_options['fields']['field_s_image_info']['table'] = 'field_data_field_s_image_info';
   $handler->display->display_options['fields']['field_s_image_info']['field'] = 'field_s_image_info';
@@ -482,7 +482,7 @@ function stanford_publication_views_views_default_views() {
   $handler->display->display_options['fields']['nid']['label'] = '';
   $handler->display->display_options['fields']['nid']['exclude'] = TRUE;
   $handler->display->display_options['fields']['nid']['element_label_colon'] = FALSE;
-  /* Field: Field: Image */
+  /* Field: Field: Featured Image */
   $handler->display->display_options['fields']['field_s_image_info']['id'] = 'field_s_image_info';
   $handler->display->display_options['fields']['field_s_image_info']['table'] = 'field_data_field_s_image_info';
   $handler->display->display_options['fields']['field_s_image_info']['field'] = 'field_s_image_info';
@@ -706,6 +706,30 @@ function stanford_publication_views_views_default_views() {
   );
   $handler->display->display_options['filters']['field_s_pub_type_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_s_pub_type_tid']['vocabulary'] = 'publication_type';
+  /* Filter criterion: Content: Subsite Tags (field_stanford_subsite_sub_tags) */
+  $handler->display->display_options['filters']['field_stanford_subsite_sub_tags_tid']['id'] = 'field_stanford_subsite_sub_tags_tid';
+  $handler->display->display_options['filters']['field_stanford_subsite_sub_tags_tid']['table'] = 'field_data_field_stanford_subsite_sub_tags';
+  $handler->display->display_options['filters']['field_stanford_subsite_sub_tags_tid']['field'] = 'field_stanford_subsite_sub_tags_tid';
+  $handler->display->display_options['filters']['field_stanford_subsite_sub_tags_tid']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['field_stanford_subsite_sub_tags_tid']['expose']['operator_id'] = 'field_stanford_subsite_sub_tags_tid_op';
+  $handler->display->display_options['filters']['field_stanford_subsite_sub_tags_tid']['expose']['label'] = 'Filter by responsible organization';
+  $handler->display->display_options['filters']['field_stanford_subsite_sub_tags_tid']['expose']['operator'] = 'field_stanford_subsite_sub_tags_tid_op';
+  $handler->display->display_options['filters']['field_stanford_subsite_sub_tags_tid']['expose']['identifier'] = 'field_stanford_subsite_sub_tags_tid';
+  $handler->display->display_options['filters']['field_stanford_subsite_sub_tags_tid']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+    9 => 0,
+    8 => 0,
+    7 => 0,
+    6 => 0,
+    11 => 0,
+    3 => 0,
+    4 => 0,
+    5 => 0,
+    10 => 0,
+  );
+  $handler->display->display_options['filters']['field_stanford_subsite_sub_tags_tid']['type'] = 'select';
+  $handler->display->display_options['filters']['field_stanford_subsite_sub_tags_tid']['vocabulary'] = 'stanford_subsites_sites';
   $handler->display->display_options['path'] = 'documents';
   $export['publications'] = $view;
 
