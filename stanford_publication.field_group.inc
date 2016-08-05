@@ -185,7 +185,6 @@ function stanford_publication_field_group_info() {
     'weight' => '10',
     'children' => array(
       0 => 'field_s_pub_author',
-      1 => 'field_s_person_link',
     ),
     'format_type' => 'div',
     'format_settings' => array(

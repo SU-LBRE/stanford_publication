@@ -52,6 +52,9 @@ function stanford_publication_strongarm() {
       'stanford_8_col_banner' => array(
         'custom_settings' => FALSE,
       ),
+      'stanford_huge_landscape' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
@@ -68,7 +71,7 @@ function stanford_publication_strongarm() {
           'weight' => '11',
         ),
         'xmlsitemap' => array(
-          'weight' => '30',
+          'weight' => '13',
         ),
       ),
       'display' => array(),

@@ -104,7 +104,7 @@ function stanford_publication_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 6,
+      'weight' => 5,
     ),
   );
 
@@ -236,7 +236,7 @@ function stanford_publication_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 3,
+      'weight' => 2,
     ),
   );
 
@@ -329,7 +329,7 @@ function stanford_publication_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'file_generic',
-      'weight' => 7,
+      'weight' => 6,
     ),
   );
 
@@ -396,7 +396,7 @@ function stanford_publication_field_default_field_instances() {
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 8,
+      'weight' => 7,
     ),
   );
 
@@ -478,7 +478,42 @@ function stanford_publication_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 4,
+      'weight' => 3,
+    ),
+  );
+
+  // Exported field_instance: 'node-stanford_publication-field_s_pub_series'
+  $field_instances['node-stanford_publication-field_s_pub_series'] = array(
+    'bundle' => 'stanford_publication',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 1,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_s_pub_series',
+    'label' => 'Publication Series',
+    'required' => FALSE,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 9,
     ),
   );
 
@@ -493,7 +528,7 @@ function stanford_publication_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 1,
+        'weight' => 2,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -514,7 +549,7 @@ function stanford_publication_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 9,
+      'weight' => 8,
     ),
   );
 
@@ -581,7 +616,46 @@ function stanford_publication_field_default_field_instances() {
         'year_range' => '1980:+4',
       ),
       'type' => 'date_select',
-      'weight' => 5,
+      'weight' => 4,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'node-stanford_publication-field_stanford_subsite_sub_tags'
+  $field_instances['node-stanford_publication-field_stanford_subsite_sub_tags'] = array(
+    'bundle' => 'stanford_publication',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Enter the value of the subsite.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 3,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 1,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_stanford_subsite_sub_tags',
+    'label' => 'Subsite Tags',
+    'required' => FALSE,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'module' => 'options',
+      'settings' => array(
+        'apply_chosen' => '',
+        'size' => 60,
+      ),
+      'type' => 'options_select',
+      'weight' => 14,
     ),
   );
 
@@ -593,12 +667,15 @@ function stanford_publication_field_default_field_instances() {
   t('Document(s)');
   t('Enter a description for this publication. Optionally, by clicking "edit summary," you can enter a brief summary of the description.');
   t('Enter the name of the publisher.');
+  t('Enter the value of the subsite.');
   t('Featured Image');
   t('If you want to link to the publisher\'s website in the Title field, enter "Learn more on publisher\'s website" and add the URL in the Link field (e.g., http://www.stanford.edu).');
   t('Link');
+  t('Publication Series');
   t('Publication Year');
   t('Publisher');
   t('Select a featured image for the publication and add an optional caption.');
+  t('Subsite Tags');
   t('This identifies the type of publication. Select one.');
   t('This text field displays authors who do not have their profiles on the site. Enter one author per line.');
   t('Type');
