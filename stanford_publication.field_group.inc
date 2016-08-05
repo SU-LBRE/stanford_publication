@@ -21,7 +21,7 @@ function stanford_publication_field_group_info() {
   $field_group->parent_name = 'group_s_postcard_content';
   $field_group->data = array(
     'label' => 'Descriptor group',
-    'weight' => '12',
+    'weight' => '11',
     'children' => array(
       0 => 'field_s_pub_publisher',
       1 => 'field_s_publication_year',
@@ -88,9 +88,10 @@ function stanford_publication_field_group_info() {
     'children' => array(
       0 => 'body',
       1 => 'field_s_pub_document',
-      2 => 'group_descriptor_info',
-      3 => 'group_morelink_group',
-      4 => 'group_s_pub_author_summary',
+      2 => 'field_s_pub_last_revision_date',
+      3 => 'group_descriptor_info',
+      4 => 'group_morelink_group',
+      5 => 'group_s_pub_author_summary',
     ),
     'format_type' => 'div',
     'format_settings' => array(
