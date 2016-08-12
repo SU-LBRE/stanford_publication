@@ -469,6 +469,14 @@ function stanford_publication_views_views_default_views() {
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['exposed_block'] = TRUE;
+  $handler->display->display_options['defaults']['empty'] = FALSE;
+  /* No results behavior: Global: Text area */
+  $handler->display->display_options['empty']['area']['id'] = 'area';
+  $handler->display->display_options['empty']['area']['table'] = 'views';
+  $handler->display->display_options['empty']['area']['field'] = 'area';
+  $handler->display->display_options['empty']['area']['empty'] = TRUE;
+  $handler->display->display_options['empty']['area']['content'] = 'No documents found.';
+  $handler->display->display_options['empty']['area']['format'] = 'content_editor_text_format';
   $handler->display->display_options['defaults']['relationships'] = FALSE;
   /* Relationship: Content: Subsite Tags (field_stanford_subsite_sub_tags) */
   $handler->display->display_options['relationships']['field_stanford_subsite_sub_tags_tid']['id'] = 'field_stanford_subsite_sub_tags_tid';
