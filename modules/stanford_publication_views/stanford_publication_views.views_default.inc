@@ -635,6 +635,7 @@ function stanford_publication_views_views_default_views() {
   $handler->display->display_options['fields']['edit_node']['element_wrapper_class'] = 'edit-link';
   $handler->display->display_options['fields']['edit_node']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['edit_node']['text'] = 'Edit';
+  $handler->display->display_options['defaults']['arguments'] = FALSE;
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
   /* Filter criterion: Content: Published */
@@ -645,21 +646,20 @@ function stanford_publication_views_views_default_views() {
   $handler->display->display_options['filters']['status']['group'] = 1;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
   /* Filter criterion: Content: Type */
-  $handler->display->display_options['filters']['type']['id'] = 'type';
-  $handler->display->display_options['filters']['type']['table'] = 'node';
-  $handler->display->display_options['filters']['type']['field'] = 'type';
-  $handler->display->display_options['filters']['type']['value'] = array(
+  $handler->display->display_options['filters']['type_1']['id'] = 'type_1';
+  $handler->display->display_options['filters']['type_1']['table'] = 'node';
+  $handler->display->display_options['filters']['type_1']['field'] = 'type';
+  $handler->display->display_options['filters']['type_1']['value'] = array(
     'stanford_publication' => 'stanford_publication',
+    'stanford_publication_series' => 'stanford_publication_series',
   );
-  $handler->display->display_options['filters']['type']['expose']['operator_id'] = 'type_op';
-  $handler->display->display_options['filters']['type']['expose']['label'] = 'Type';
-  $handler->display->display_options['filters']['type']['expose']['operator'] = 'type_op';
-  $handler->display->display_options['filters']['type']['expose']['identifier'] = 'type';
+  $handler->display->display_options['filters']['type_1']['group'] = 1;
   /* Filter criterion: Global: Combine fields filter */
   $handler->display->display_options['filters']['combine']['id'] = 'combine';
   $handler->display->display_options['filters']['combine']['table'] = 'views';
   $handler->display->display_options['filters']['combine']['field'] = 'combine';
   $handler->display->display_options['filters']['combine']['operator'] = 'contains';
+  $handler->display->display_options['filters']['combine']['group'] = 1;
   $handler->display->display_options['filters']['combine']['exposed'] = TRUE;
   $handler->display->display_options['filters']['combine']['expose']['operator_id'] = 'combine_op';
   $handler->display->display_options['filters']['combine']['expose']['label'] = 'Search by keyword';
@@ -686,6 +686,7 @@ function stanford_publication_views_views_default_views() {
   $handler->display->display_options['filters']['field_s_pub_type_tid']['id'] = 'field_s_pub_type_tid';
   $handler->display->display_options['filters']['field_s_pub_type_tid']['table'] = 'field_data_field_s_pub_type';
   $handler->display->display_options['filters']['field_s_pub_type_tid']['field'] = 'field_s_pub_type_tid';
+  $handler->display->display_options['filters']['field_s_pub_type_tid']['group'] = 1;
   $handler->display->display_options['filters']['field_s_pub_type_tid']['exposed'] = TRUE;
   $handler->display->display_options['filters']['field_s_pub_type_tid']['expose']['operator_id'] = 'field_s_pub_type_tid_op';
   $handler->display->display_options['filters']['field_s_pub_type_tid']['expose']['label'] = 'Filter by type';
@@ -710,6 +711,7 @@ function stanford_publication_views_views_default_views() {
   $handler->display->display_options['filters']['field_stanford_subsite_sub_tags_tid']['id'] = 'field_stanford_subsite_sub_tags_tid';
   $handler->display->display_options['filters']['field_stanford_subsite_sub_tags_tid']['table'] = 'field_data_field_stanford_subsite_sub_tags';
   $handler->display->display_options['filters']['field_stanford_subsite_sub_tags_tid']['field'] = 'field_stanford_subsite_sub_tags_tid';
+  $handler->display->display_options['filters']['field_stanford_subsite_sub_tags_tid']['group'] = 1;
   $handler->display->display_options['filters']['field_stanford_subsite_sub_tags_tid']['exposed'] = TRUE;
   $handler->display->display_options['filters']['field_stanford_subsite_sub_tags_tid']['expose']['operator_id'] = 'field_stanford_subsite_sub_tags_tid_op';
   $handler->display->display_options['filters']['field_stanford_subsite_sub_tags_tid']['expose']['label'] = 'Filter by responsible organization';
@@ -730,6 +732,11 @@ function stanford_publication_views_views_default_views() {
   );
   $handler->display->display_options['filters']['field_stanford_subsite_sub_tags_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_stanford_subsite_sub_tags_tid']['vocabulary'] = 'stanford_subsites_sites';
+  /* Filter criterion: Content: Publication Series (field_s_pub_series) */
+  $handler->display->display_options['filters']['field_s_pub_series_target_id']['id'] = 'field_s_pub_series_target_id';
+  $handler->display->display_options['filters']['field_s_pub_series_target_id']['table'] = 'field_data_field_s_pub_series';
+  $handler->display->display_options['filters']['field_s_pub_series_target_id']['field'] = 'field_s_pub_series_target_id';
+  $handler->display->display_options['filters']['field_s_pub_series_target_id']['operator'] = 'empty';
   $handler->display->display_options['path'] = 'documents';
   $export['publications'] = $view;
 
