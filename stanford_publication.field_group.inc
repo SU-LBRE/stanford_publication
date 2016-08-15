@@ -8,7 +8,7 @@
  * Implements hook_field_group_info().
  */
 function stanford_publication_field_group_info() {
-  $export = array();
+  $field_groups = array();
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -40,7 +40,7 @@ function stanford_publication_field_group_info() {
       'formatter' => 'open',
     ),
   );
-  $export['group_descriptor_info|node|stanford_publication|default'] = $field_group;
+  $field_groups['group_descriptor_info|node|stanford_publication|default'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -71,7 +71,7 @@ function stanford_publication_field_group_info() {
       'formatter' => 'open',
     ),
   );
-  $export['group_morelink_group|node|stanford_publication|default'] = $field_group;
+  $field_groups['group_morelink_group|node|stanford_publication|default'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -107,7 +107,7 @@ function stanford_publication_field_group_info() {
       'formatter' => 'open',
     ),
   );
-  $export['group_s_postcard_content|node|stanford_publication|default'] = $field_group;
+  $field_groups['group_s_postcard_content|node|stanford_publication|default'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -138,7 +138,7 @@ function stanford_publication_field_group_info() {
       'formatter' => 'open',
     ),
   );
-  $export['group_s_postcard_image|node|stanford_publication|default'] = $field_group;
+  $field_groups['group_s_postcard_image|node|stanford_publication|default'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -170,7 +170,7 @@ function stanford_publication_field_group_info() {
       'formatter' => 'open',
     ),
   );
-  $export['group_s_postcard|node|stanford_publication|default'] = $field_group;
+  $field_groups['group_s_postcard|node|stanford_publication|default'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -201,7 +201,16 @@ function stanford_publication_field_group_info() {
       'formatter' => 'open',
     ),
   );
-  $export['group_s_pub_author_summary|node|stanford_publication|default'] = $field_group;
+  $field_groups['group_s_pub_author_summary|node|stanford_publication|default'] = $field_group;
 
-  return $export;
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('Author Summary');
+  t('Descriptor group');
+  t('More Link group');
+  t('Postcard');
+  t('Postcard Content');
+  t('Postcard Image');
+
+  return $field_groups;
 }

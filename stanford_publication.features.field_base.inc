@@ -10,7 +10,7 @@
 function stanford_publication_field_default_field_bases() {
   $field_bases = array();
 
-  // Exported field_base: 'field_s_pub_author'
+  // Exported field_base: 'field_s_pub_author'.
   $field_bases['field_s_pub_author'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -31,7 +31,7 @@ function stanford_publication_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_s_pub_document'
+  // Exported field_base: 'field_s_pub_document'.
   $field_bases['field_s_pub_document'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -54,7 +54,7 @@ function stanford_publication_field_default_field_bases() {
     'type' => 'file',
   );
 
-  // Exported field_base: 'field_s_pub_last_revision_date'
+  // Exported field_base: 'field_s_pub_last_revision_date'.
   $field_bases['field_s_pub_last_revision_date'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -83,7 +83,7 @@ function stanford_publication_field_default_field_bases() {
     'type' => 'datetime',
   );
 
-  // Exported field_base: 'field_s_pub_link'
+  // Exported field_base: 'field_s_pub_link'.
   $field_bases['field_s_pub_link'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -112,7 +112,7 @@ function stanford_publication_field_default_field_bases() {
     'type' => 'link_field',
   );
 
-  // Exported field_base: 'field_s_pub_publisher'
+  // Exported field_base: 'field_s_pub_publisher'.
   $field_bases['field_s_pub_publisher'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -133,7 +133,7 @@ function stanford_publication_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_s_pub_series'
+  // Exported field_base: 'field_s_pub_series'.
   $field_bases['field_s_pub_series'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -168,7 +168,7 @@ function stanford_publication_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
-  // Exported field_base: 'field_s_pub_type'
+  // Exported field_base: 'field_s_pub_type'.
   $field_bases['field_s_pub_type'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -194,7 +194,7 @@ function stanford_publication_field_default_field_bases() {
     'type' => 'taxonomy_term_reference',
   );
 
-  // Exported field_base: 'field_s_publication_year'
+  // Exported field_base: 'field_s_publication_year'.
   $field_bases['field_s_publication_year'] = array(
     'active' => 1,
     'cardinality' => 1,

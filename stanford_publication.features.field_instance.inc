@@ -10,7 +10,7 @@
 function stanford_publication_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-stanford_publication-body'
+  // Exported field_instance: 'node-stanford_publication-body'.
   $field_instances['node-stanford_publication-body'] = array(
     'bundle' => 'stanford_publication',
     'default_value' => NULL,
@@ -108,7 +108,7 @@ function stanford_publication_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-stanford_publication-field_s_image_info'
+  // Exported field_instance: 'node-stanford_publication-field_s_image_info'.
   $field_instances['node-stanford_publication-field_s_image_info'] = array(
     'bundle' => 'stanford_publication',
     'default_value' => NULL,
@@ -162,7 +162,7 @@ function stanford_publication_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-stanford_publication-field_s_pub_author'
+  // Exported field_instance: 'node-stanford_publication-field_s_pub_author'.
   $field_instances['node-stanford_publication-field_s_pub_author'] = array(
     'bundle' => 'stanford_publication',
     'default_value' => NULL,
@@ -240,7 +240,7 @@ function stanford_publication_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-stanford_publication-field_s_pub_document'
+  // Exported field_instance: 'node-stanford_publication-field_s_pub_document'.
   $field_instances['node-stanford_publication-field_s_pub_document'] = array(
     'bundle' => 'stanford_publication',
     'deleted' => 0,
@@ -334,7 +334,7 @@ function stanford_publication_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'node-stanford_publication-field_s_pub_last_revision_date'
+  // 'node-stanford_publication-field_s_pub_last_revision_date'.
   $field_instances['node-stanford_publication-field_s_pub_last_revision_date'] = array(
     'bundle' => 'stanford_publication',
     'deleted' => 0,
@@ -401,7 +401,7 @@ function stanford_publication_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-stanford_publication-field_s_pub_link'
+  // Exported field_instance: 'node-stanford_publication-field_s_pub_link'.
   $field_instances['node-stanford_publication-field_s_pub_link'] = array(
     'bundle' => 'stanford_publication',
     'default_value' => NULL,
@@ -468,7 +468,7 @@ function stanford_publication_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-stanford_publication-field_s_pub_publisher'
+  // Exported field_instance: 'node-stanford_publication-field_s_pub_publisher'.
   $field_instances['node-stanford_publication-field_s_pub_publisher'] = array(
     'bundle' => 'stanford_publication',
     'default_value' => NULL,
@@ -550,7 +550,7 @@ function stanford_publication_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-stanford_publication-field_s_pub_series'
+  // Exported field_instance: 'node-stanford_publication-field_s_pub_series'.
   $field_instances['node-stanford_publication-field_s_pub_series'] = array(
     'bundle' => 'stanford_publication',
     'default_value' => NULL,
@@ -585,7 +585,7 @@ function stanford_publication_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-stanford_publication-field_s_pub_type'
+  // Exported field_instance: 'node-stanford_publication-field_s_pub_type'.
   $field_instances['node-stanford_publication-field_s_pub_type'] = array(
     'bundle' => 'stanford_publication',
     'default_value' => NULL,
@@ -622,7 +622,7 @@ function stanford_publication_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'node-stanford_publication-field_s_publication_year'
+  // 'node-stanford_publication-field_s_publication_year'.
   $field_instances['node-stanford_publication-field_s_publication_year'] = array(
     'bundle' => 'stanford_publication',
     'deleted' => 0,
@@ -689,7 +689,7 @@ function stanford_publication_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'node-stanford_publication-field_stanford_subsite_sub_tags'
+  // 'node-stanford_publication-field_stanford_subsite_sub_tags'.
   $field_instances['node-stanford_publication-field_stanford_subsite_sub_tags'] = array(
     'bundle' => 'stanford_publication',
     'default_value' => NULL,
